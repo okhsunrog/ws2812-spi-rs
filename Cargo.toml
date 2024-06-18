@@ -14,6 +14,10 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/smart-leds-rs/ws2812-spi-rs"
 
+[lib]
+harness = false # do not use the built-in cargo test harness -> resolve rust-analyzer errors
+test = false
+
 [dependencies]
 smart-leds-trait = "0.3.0"
 embedded-hal = "1.0.0"
